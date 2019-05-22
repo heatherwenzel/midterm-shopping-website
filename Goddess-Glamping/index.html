@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Open+Sans:400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Goddess Glamping</title>
+</head>
+
+<body>
+    <header>
+        <img src="./glampinglogo.png" class="logo">
+        <button id="myBtn">
+            <i class="material-icons">shopping_cart</i>
+        </button>
+    </header>
+
+
+    <main>
+
+        <section class="item__container">
+            <div class="container">
+                <p class="container__title liveTitleBox">LIVE</p>
+                <ul class="container__list live__list hidden"></ul>
+            </div>
+
+            <div class="container">
+                <p class="container__title laughTitleBox">LAUGH</p>
+                <ul class="container__list laugh__list hidden"></ul>
+            </div>
+
+            <div class="container">
+                <p class="container__title loungeTitleBox">LOUNGE</p>
+                <ul class="container__list lounge__list hidden"></ul>
+            </div>
+        </section>
+
+
+        <section class="allCheckoutPages">
+            <div class="cart__modal"></div>
+            <div class="cart__container">
+                <span class=closeModal>X</span>
+                <p class="cart__container__title">Here's what's in your cart:</p>
+                <ul class="cart__list"></ul>
+                <p class="cart__total"></p>
+                <button class="checkout-button">Checkout</button>
+            </div>
+            </div>
+
+            <div class="checkout-page">
+                <span class=closeModal>X</span>
+                <p class="checkout__container__title">Checkout</p>
+                <p class=priceOfCart></p>
+                <p class="checkoutTitle">Pay with cash:</p>
+                <label for="amount">Amount:</label>
+                <input type="number" placeholder="Amount" class="cashAmount">
+                <p class=remainingCash></p>
+                <p class="checkoutTitle">Pay with card:</p>
+                <div class="cardForm">
+                    <label for="cardNumber">Card number:</label>
+                    <input type="number" placeholder="Card number" class="cardNumberInput">
+                    <label for="expDate">Expiration date:</label>
+                    <input type="text" placeholder="Expiration date">
+                    <label for="CVV">CVV:</label>
+                    <input type="number" placeholder="CVV">
+                </div>
+                <button class="checkout-submit">Submit</button>
+            </div>
+
+            <div class="receipt-page">
+                <span class=closeModal>X</span>
+                <p class="receipt__container__title">Thank you for your purchase! Your receipt:</p>
+                <p class="owedCash"></p>
+                <p class="userReceipt"></p>
+                <p class="itemsPurchased"></p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
